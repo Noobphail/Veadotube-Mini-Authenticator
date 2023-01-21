@@ -19,7 +19,7 @@
         var redirect = 'https://okactuallyrob.github.io/Veadotube-Mini-Authenticator/';
 
         //document.getElementById('authorize_public').setAttribute('href', 'https://id.twitch.tv/oauth2/authorize?client_id=' + client_id + '&redirect_uri=' + encodeURIComponent(redirect) + '&response_type=token');
-        document.getElementById('authorize_email').setAttribute('href', 'https://id.twitch.tv/oauth2/authorize?client_id=' + client_id + '&redirect_uri=' + encodeURIComponent(redirect) + '&response_type=token&scope=chat:read'); //channel:read:redemptions
+        document.getElementById('authorize_email').setAttribute('href', 'https://id.twitch.tv/oauth2/authorize?client_id=' + client_id + '&redirect_uri=' + encodeURIComponent(redirect) + '&response_type=token&scope=moderator:read:shield_mode'); //chat:read'); //channel:read:redemptions moderator:read:shield_mode
         document.getElementById('access_token').textContent = '';
 
         if (document.location.hash && document.location.hash != '') {
