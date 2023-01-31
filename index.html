@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Veadotube Companion Client Authenticator</title>
+    <title>Twitch Hotkey Assistant Authenticator</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -22,7 +22,7 @@
             var parsedHash = new URLSearchParams(window.location.hash.slice(1));
             if (parsedHash.get('access_token')) {
                 var access_token = parsedHash.get('access_token');
-                document.getElementById('access_token').textContent = 'Please paste the following access key into Veadotube Mini Companion Client (you can close this page now): ' + access_token;
+                document.getElementById('access_token').textContent = 'Please paste the following access key into Twitch Hotkey Assistant (you can close this page now): ' + access_token;
             }
         } else if (document.location.search && document.location.search != '') {
             var parsedParams = new URLSearchParams(window.location.search);
